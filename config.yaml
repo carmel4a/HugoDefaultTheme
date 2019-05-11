@@ -12,6 +12,22 @@ languages:
     taxonomies:
       tag: "tagi"
       kategoria: "kategorie"
+    menu:
+      main:
+      - identifier: index
+        name: Strona główna
+        url: .
+        weight: -100
+      - identifier: about
+        name: O mnie
+        url: ./about/
+        weight: -50
+      - identifier: blog
+        name: Blog
+        url: ./blog/
+      - identifier: gallery
+        name: Galeria
+        url: ./gallery/
   en:
     languageName: "English"
     weight: 2
@@ -19,6 +35,22 @@ languages:
     taxonomies:
       tag: "tags"
       category: "categories"
+    menu:
+      main:
+      - identifier: index
+        name: Index
+        url: .
+        weight: -100
+      - identifier: about
+        name: About
+        url: ./about/
+        weight: -50
+      - identifier: blog
+        name: Blog
+        url: ./blog/
+      - identifier: gallery
+        name: Gallery
+        url: ./gallery/
   de:
     languageName: "Deutsch"
     weight: 3
@@ -26,3 +58,20 @@ languages:
     taxonomies:
       das etikett: "die etikette"
       die kategorie: "die kategorien"
+    menu:
+      main:
+      - identifier: index
+        name: Index DE
+        url: .
+        weight: -100
+      - identifier: about
+        name: About DE
+        url: ./about/
+        weight: -50
+      - identifier: blog
+        name: Blog DE
+        url: ./blog/
+      - identifier: gallery
+        name: Galeria DE
+        url: ./gallery/
+

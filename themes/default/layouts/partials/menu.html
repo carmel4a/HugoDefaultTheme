@@ -1,9 +1,11 @@
-<nav
-    class="menu">
+<nav class="menu">
     <ul>
-        <a href=".">Index</a>
-        <a href="about">About</a>
-        <a href="gallery">Gallery</a>
-        <a href="blog">Blog</a>
+        {{ range .Site.Menus.main }}
+        <li>
+            <a href="{{ .URL }}" title="{{ .Title }}">
+                {{- .Name -}}
+            </a>
+        </li>
+        {{ end }}
     </ul>
 </nav>
