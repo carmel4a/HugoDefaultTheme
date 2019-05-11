@@ -1,0 +1,28 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+theme: "default"
+defaultContentLanguageInSubdir: true
+ignoreFiles: ["\\*.keep$"] # doesn't work due to Hugo bug.
+
+languages:
+  pl:
+    languageName: "Polski"
+    weight: 1
+    title: "Strona Domowa"
+    taxonomies:
+      tag: "tagi"
+      kategoria: "kategorie"
+  en:
+    languageName: "English"
+    weight: 2
+    title: "Homepage"
+    taxonomies:
+      tag: "tags"
+      category: "categories"
+  de:
+    languageName: "Deutsch"
+    weight: 3
+    title: "Startseite"
+    taxonomies:
+      das etikett: "die etikette"
+      die kategorie: "die kategorien"

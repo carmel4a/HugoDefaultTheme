@@ -1,0 +1,17 @@
+<head>
+    <title>{{ .Title }}</title>
+    <base
+        href="{{ .Site.BaseURL }}/{{ .Lang }}/">
+    {{ block "DefaultLinks" . }}
+        <link
+            href="css/default.css"
+            rel="stylesheet">
+        <link
+            href="favicon.ico.png"
+            rel="icon"
+            type="image/png">
+    {{ end }}
+    {{ block "Links" . }}
+    {{ end}}
+</head>
+

@@ -1,0 +1,21 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.html text
+*.js text
+*.css text
+*.less text
+*.sass text
+*.yaml text
+*.toml text
+*.json text
+LICENSE text
+README text
+.gitattributes text
+.gitignore text
+
+*.png binary
+*.jpg binary
+*.keep binary

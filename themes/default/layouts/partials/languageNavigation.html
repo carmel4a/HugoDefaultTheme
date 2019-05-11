@@ -1,0 +1,20 @@
+<nav
+    class="languageNavigation">
+    <ul>
+        {{ $LanguagePages := sort ( slice . | append .Translations ) "Language.Weight" }}
+
+        {{ range $LanguagePages }}
+            {{ $href := printf "%s%s" "href=" .Permalink | string | safeHTML }}
+            {{ $class := "languageNavigationItem" }}
+            {{ $begin := printf "%s%s%s%s%s" "<a class='" $class "'' " $href ">" | safeHTML }}
+            {{ $end := string "</a>" | safeHTML }}
+
+            {{ if eq .Language $.Page.Language }}
+                {{ $class = printf "%s%s%s" $class " " "selected" }}
+                {{ $begin = printf "%s%s%s%s%s" "<b><a class='" $class "' " $href ">" | safeHTML }}
+                {{ $end = "</a></b>" | safeHTML }}
+            {{ end }}
+            {{ $begin }}{{ .Language.LanguageName }}{{ $end }}
+        {{ end }}
+    </ul>
+</nav>
