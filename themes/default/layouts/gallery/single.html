@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+{{ range .Resources.ByType "image" }}
+	{{ .Title }}
+	<img src="{{ .RelPermalink }}"></img>
+{{ end }}
+
+{{ .Content }}
+{{ end }}
